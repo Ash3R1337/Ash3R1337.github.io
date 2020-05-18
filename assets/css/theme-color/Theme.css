@@ -1,0 +1,51 @@
+#my-video:after,
+#my-hero:after {
+	background-color: #1E1919;
+    background: -webkit-linear-gradient(to right, #EE0707,  #1E1919);
+    background: linear-gradient(to right,  #EE0707, #1E1919);
+}
+
+a:hover,
+a:focus,
+.my-book-now-btn,
+.my-copy-right a:hover,
+.my-copy-right a:focus,
+.my-send-msg-btn:hover,
+.my-send-msg-btn:focus,
+.my-logo,
+.my-logo:hover,
+.my-logo:focus,
+.my-client-quote,
+.my-clients-slider .slick-prev, 
+.my-clients-slider .slick-next,
+.my-clients-slider .slick-prev::before, 
+.my-clients-slider .slick-next::before,
+.my-services-single-icon {
+	color:  #EE0707;
+}
+
+
+.scrollToTop,
+.my-reviews-slide .slick-dots li.slick-active,
+#my-callto-action {
+	background-color: #EE0707
+
+.my-social-media a:hover,
+.my-social-media a:focus {
+	border: 1px solid #EE0707;
+	color: #EE0707;
+}
+
+.my-contact-form .form-control:focus,
+.my-projects-single-info .my-book-now-btn {
+	border: 1px solid #EE0707;    
+} 
+
+.my-send-msg-btn,
+.my-send-msg-btn:focus,
+.my-register-btn:hover,
+.my-register-btn:focus {
+	border: 1px solid #EE0707;
+	background-color: #EE0707;
+}
+

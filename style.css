@@ -135,6 +135,39 @@ iframe {
 	border: none;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: black;
+  z-index: 1001;
+}
+
+.preloader_image {
+  position: relative;
+  top: 20%;
+  left: 35%;
+  width: 500px;
+  height: 500px;
+  margin-top: -32px;
+  margin-left: -32px;
+  background: url('assets/images/load.gif') no-repeat 50% 50%;
+  background-position: center;
+  background-size: 100%
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 .my-send-msg-btn {
 	color: #555;
 	font-size: 14px;

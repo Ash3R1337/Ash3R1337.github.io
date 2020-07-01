@@ -930,9 +930,8 @@ iframe {
 
 
 
-/*--------------------*/
-/* RESPONSIVE STYLE */
-/*--------------------*/
+
+/* MEDIA */
 
 @media (max-width: 1199px) {
 
@@ -1013,6 +1012,28 @@ iframe {
 }
 
 @media (max-width: 767px) {
+
+.preloader_image {
+  position: relative;
+  top: 15%;
+  left: -60px;
+  width: 500px;
+  height: 500px;
+  margin-top: -32px;
+  margin-left: -32px;
+  background: url('assets/images/load.gif') no-repeat 50% 50%;
+  background-position: center;
+  background-size: 100%
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 	
 	.my-logo-area {
 		width: 100%;

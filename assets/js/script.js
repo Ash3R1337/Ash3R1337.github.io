@@ -4,6 +4,11 @@
             $('html,body').animate({scrollTop:550}, 1000);
      	});
 
+     	jQuery(window).on('load', function() 
+     	{
+  			jQuery('.preloader').delay(6000).fadeOut().end().delay(400).fadeOut('slow');
+		});
+
 	    jQuery(window).scroll(function(){
 	      if (jQuery(this).scrollTop() > 300) {
 	        jQuery('.scrollToTop').fadeIn();

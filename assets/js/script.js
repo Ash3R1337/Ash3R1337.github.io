@@ -6,8 +6,8 @@
 
      	jQuery(window).on('load', function() 
      	{
-  			jQuery('.preloader').fadeOut().end().delay(400).fadeOut('slow');
-		});
+  		jQuery('.preloader').fadeOut().end().fadeOut('slow');
+	});
 
 	    jQuery(window).scroll(function(){
 	      if (jQuery(this).scrollTop() > 300) {

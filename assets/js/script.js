@@ -6,7 +6,7 @@
 
      	jQuery(window).on('load', function() 
      	{
-  			jQuery('.preloader').delay(6000).fadeOut().end().delay(400).fadeOut('slow');
+  			jQuery('.preloader').fadeOut().end().delay(400).fadeOut('slow');
 		});
 
 	    jQuery(window).scroll(function(){

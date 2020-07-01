@@ -935,6 +935,10 @@ iframe {
 
 @media (max-width: 1199px) {
 
+	.preloader_image {
+  top: 15%;
+  left: 32%;
+
 	.my-about-right {
 		margin-top: 20px;
 		width: 140%;
@@ -948,7 +952,12 @@ iframe {
 		
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
+
+	.preloader_image {
+  top: 15%;
+  left: 30%;
+}
 
 	.my-primary-btn {
 		font-size: 14px;
@@ -1014,16 +1023,8 @@ iframe {
 @media (max-width: 767px) {
 
 .preloader_image {
-  position: relative;
   top: 15%;
-  left: -60px;
-  width: 500px;
-  height: 500px;
-  margin-top: -32px;
-  margin-left: -32px;
-  background: url('assets/images/load.gif') no-repeat 50% 50%;
-  background-position: center;
-  background-size: 100%
+  left: 20%;
 }
 
 .loaded_hiding .preloader {
@@ -1138,6 +1139,11 @@ iframe {
 
 
 @media (max-width: 640px){
+
+	.preloader_image {
+  top: 15%;
+  left: 15%;
+}
 	
 	.my-hero-featured-content h1 {
 		font-size: 30px;
@@ -1169,6 +1175,11 @@ iframe {
 
 
 @media (max-width: 480px) {
+
+	.preloader_image {
+  top: 15%;
+  left: 5%;
+}
 
 	body {
 		font-size: 14px;
@@ -1274,6 +1285,11 @@ iframe {
 
 @media (max-width: 360px) {
 
+	.preloader_image {
+  top: 15%;
+  left: -12%;
+}
+
 
 	.my-hero-featured-area {
 		padding: 0 0 30px;
@@ -1331,6 +1347,11 @@ iframe {
 
 
 @media (max-width: 320px) {
+
+	.preloader_image {
+  top: 15%;
+  left: -19%;
+}
 	
 	h2 {
 		font-size: 22px;

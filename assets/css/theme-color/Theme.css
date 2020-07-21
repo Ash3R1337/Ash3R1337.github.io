@@ -36,7 +36,7 @@ a:focus,
 	color: #EE0707;
 }
 
-.my-contact-form .form-control:focus,
+.my-test-form .form-control:focus,
 .my-projects-single-info .my-book-now-btn {
 	border: 1px solid #EE0707;    
 } 

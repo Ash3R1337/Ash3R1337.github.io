@@ -1,0 +1,5 @@
+2020-12-30 11:16:01___Ash3R___Hi there!
+2020-12-30 11:17:12___Ash3R___This is my first online chat
+2020-12-30 11:26:50___Ash3R___New messages appear at the top
+2020-12-30 11:29:16___Ash3R___The chat works on PHP, it means, that chat doesn't work on GitHub
+2020-12-30 11:32:42___Ash3R___But soon you will be able to use it, when i place the site on an internet hosting

@@ -1,3 +1,35 @@
+body {
+	background-color: #1E1919;
+	transition: all 0.5s ease; 
+}
+
+.my-about-right, .my-projects-single {
+	background-color: #3F3A3A;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.my-social-media a,
+.chat {
+	border-color:  white;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.btn-ch {
+	background-color: white;
+	transition: all 0.5s ease;
+}
+
+.my-services-single-icon i:hover,
+p, h3,
+#my-services h2,
+#my-projects h2,
+#my-skills h2 {
+	color: white;
+	transition: all 0.5s ease;
+}
+
 #my-video:after,
 #my-hero:after,
 #my-test:after {

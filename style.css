@@ -2,6 +2,7 @@ body,
 html {
 	overflow-x:hidden;
 	cursor: default;
+	padding-top: 0;
 }
 
 ul {
@@ -143,20 +144,22 @@ iframe {
   bottom: 0;
   overflow: hidden;
   background: black;
-  z-index: 1001;
+  z-index: 10001;
 }
 
 .preloader_image {
-  position: relative;
-  top: 20%;
-  left: 35%;
   width: 500px;
   height: 500px;
-  margin-top: -32px;
-  margin-left: -32px;
+  display: block;
   background: url('assets/images/load.gif') no-repeat 50% 50%;
   background-position: center;
   background-size: 100%
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
 }
 
 .loaded_hiding .preloader {
@@ -189,6 +192,7 @@ iframe {
 .my-send-msg-btn:focus {
 	background-color: #fff;
 }
+
 .scrollToTop {
 	background-color: black;
 	bottom: 60px;
@@ -212,6 +216,130 @@ iframe {
 .scrollToTop:focus {
   color: white;
 }
+
+.Theme {
+	background-color: #1E1919;
+	bottom: 60px;
+	color: white;
+	font-size: 30px;
+	line-height: 50px;
+	position: fixed;
+	left: 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 55px;
+	z-index: 999;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	height: 55px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#chat {
+	line-height: 20px;
+}
+
+.chat {
+	left: -300px;
+	top: 7%;
+	position: fixed;
+	z-index: 10000;
+	background-color: black;
+	border: 2px solid #1E1919;
+	height: 650px;
+	width: 300px;
+	display: block;
+	border-top-right-radius: 8%;
+	border-bottom-right-radius: 8%;
+	transition: all 1s ease;
+}
+
+.chat .area {
+	background: url('assets/images/mes_back_1.jpg');
+	border-top-right-radius: inherit;
+	position: relative;
+	background-size: contain;
+}
+
+.btn-ch {
+	background-color: #1E1919;
+	width: 25px;
+	height: 70px;
+	display: inline-block;
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	float: right;
+	margin-top: 100%;
+	position: relative;
+	right: -25px;
+	opacity: 80%;
+	padding-top: 20px;
+	padding-left: 4px; 
+	cursor: pointer;
+}
+
+.btn-ch span {
+	color: #EE0707;
+	font-size: 15px;
+}
+
+.chat .mes-group {
+  	margin: 0;
+  	position: absolute;
+  	top: 88%;
+  	left: 53%;
+  	margin-right: -50%;
+  	transform: translate(-50%, -50%) 
+}
+
+.chat .mes-group input {
+	border-radius: 15px;
+}
+
+.chat .mes-group input:focus {
+	background-color: #C2BBBB;
+	border: 3px solid #EE0707;
+	box-shadow: 1px 1px 2px 0 #EE0707;
+}
+
+.chat .mes-group input:hover {
+	border-color: #EE0707;
+}
+
+.chat .mes-group i:hover {
+	cursor: pointer;
+}
+
+#confirm:hover {
+	color: #02FF91;
+	transition: all .3s ease;
+}
+
+#reload:hover {
+	color: #02FF91;
+	transition: all .3s ease;
+}
+
+.chat .mes-group i {
+	font-size: 24px;
+}
+
+
+.chat .mes-group .btn-mes {
+	cursor: pointer;
+	position: relative;
+	bottom: 20px;
+}
+
+.chat .mes-group .btn-mes:hover {
+	color: #EE0707;
+}
+
+.chat .area {
+	min-height: 80%;
+}
+
 #my-hero {
 	background-image: url("assets/images/head-featured-bg.jpg");
 	display: inline;
@@ -408,7 +536,6 @@ iframe {
 }
 
 #my-about {
-	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -444,7 +571,6 @@ iframe {
 }
 
 #my-services {
-	background-color: #fff;
 	float: left;
 	padding: 50px 0 100px;
 	display: none;
@@ -559,7 +685,6 @@ iframe {
 }
 
 #my-projects {
-	background-color: #fff;
 	float: left;
 	padding: 100px 0;
 	width: 100%;
@@ -595,6 +720,7 @@ iframe {
 	width: 100%;
 	margin: 15px 0;
 	transition: all 0.2s ease;
+	height: 480px;
 }
 
 .my-projects-single:hover {
@@ -747,10 +873,23 @@ iframe {
 	background-position: center center;
 	background-size: 1000px;
 	background-attachment: fixed;
-	background-color: #960000;
 	float: left;
 	width: 100%;
 	display: none;
+	position: relative;
+}
+
+#my-test:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	opacity: 0.94;
+	width: 100%;
+	z-index: 10;
 }
 
 .my-test-area {
@@ -760,6 +899,8 @@ iframe {
 	padding: 100px 18%;
 	width: 100%;
 	color: white;
+	z-index: 99;
+	position: relative;
 }
 
 .my-test-area h2{
@@ -787,7 +928,6 @@ iframe {
 }
 
 #my-footer {
-	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -856,10 +996,6 @@ iframe {
 
 @media (max-width: 1199px) {
 
-	.preloader_image {
-  top: 15%;
-  left: 32%;
-
 	.my-about-right {
 		margin-top: 20px;
 		width: 140%;
@@ -874,11 +1010,6 @@ iframe {
 }
 
 @media (max-width: 991px) {
-
-	.preloader_image {
-  top: 15%;
-  left: 30%;
-}
 
 	.my-primary-btn {
 		font-size: 14px;
@@ -943,20 +1074,6 @@ iframe {
 
 @media (max-width: 767px) {
 
-.preloader_image {
-  top: 15%;
-  left: 20%;
-}
-
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
-.loaded .preloader {
-  display: none;
-}
-	
 	.my-logo-area {
 		width: 100%;
 		text-align: center;
@@ -1061,11 +1178,6 @@ iframe {
 
 @media (max-width: 640px){
 
-	.preloader_image {
-  top: 15%;
-  left: 15%;
-}
-	
 	.my-hero-featured-content h1 {
 		font-size: 30px;
 	}
@@ -1090,17 +1202,20 @@ iframe {
 		width: 45px;
 		height: 45px;
 		border-radius: 8px;
-	}						
+	}
+
+	.Theme {
+		font-size: 25px;
+		line-height: 43px;
+		width: 45px;
+		height: 45px;
+		border-radius: 8px;
+	}							
 
 }
 
 
 @media (max-width: 480px) {
-
-	.preloader_image {
-  top: 15%;
-  left: 5%;
-}
 
 	body {
 		font-size: 14px;
@@ -1206,12 +1321,6 @@ iframe {
 
 @media (max-width: 360px) {
 
-	.preloader_image {
-  top: 15%;
-  left: -12%;
-}
-
-
 	.my-hero-featured-area {
 		padding: 0 0 30px;
 	}
@@ -1269,11 +1378,6 @@ iframe {
 
 @media (max-width: 320px) {
 
-	.preloader_image {
-  top: 15%;
-  left: -19%;
-}
-	
 	h2 {
 		font-size: 22px;
 	}

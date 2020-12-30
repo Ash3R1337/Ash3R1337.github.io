@@ -48,7 +48,7 @@
 			if($('.in_mes-nick').val().length > 0){
 				if($('.in_mes').val().length > 0)
 				{
-					
+					alert("Chat doesn't work on GitHub")
 				}
 				else
 				{
